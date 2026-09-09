@@ -53,30 +53,114 @@
 
 @layer base {
     :root {
-        --nav-and-footer-color: ;
-        --heading-color-1: ;
-        --heading-color-2: ;
-        --light-color: ;
-        --dark-color: ;
+        /*
+        Logo and nav text will be in beige (#D6B896). Regular text will be in black (#000000). Navigation and footer background will be navy blue (#273751). Section backgrounds will be white (#FFFFFF) or beige (#D6B896). Decorative accents like underlines or tables will be red (#632226). 
+        CSS reset code will be used to reset default styles. Padding amounts will decrease as header levels decrease. Elements will have 20px top/bottom padding minimum.
+        Noto Serif will be the font for headers and Roboto for regular text.
+        Max-width of all content will be 90% of the viewport. The max-width for main page content will be 80% of the viewport.
+        Table borders will be red (#632226).
+        Focus state will have a bright blue color (#93b6ed).
+        The enroll now link will be styled as a navy blue button.
 
-        --heading-font-family: ;
-        --body-font-family: ;
-
-        --spacing-level-1: 10px;
-        --spacing-level-2: 20px;
-        --spacing-level-3: 30px;
-        --spacing-level-4: 40px;
-
+        Utilities and states: at least three purposeful utilities plus hover, focus-visible, current page, and one additional relevant state.
+        Print support: a print stylesheet or print media block that improves readability for at least one important page type.
+        Refactoring evidence: before/after notes showing how you reduced duplication, lowered specificity, clarified naming, or replaced repeated values.
+        Architecture notes: a short explanation of your layer/order strategy, token decisions, naming approach, and browser checks.
+        AI disclosure: if used, document purpose, output considered, verification, and what changed.
+        */
         
+        --heading1-table-decorative-color: #642226;
+        --heading2-buttonFocus-color: #627890;
+        --logo-navText-section2-color: #D6B896;
+        --nav-footer-button-color: #273751;
+        --section1-color: #FFFFFF;
+        --text-color: #000000;
+        --nav-and-footer-color: #273751;
+
+        --heading-font-family: 'Noto Serif', serif;
+        --body-font-family: Roboto, sans-serif;
+        --heading-font-size: 2rem;
+        --subheading-font-size: 1.5rem;
+        --body-font-size: 1rem;
+
+        --spacing-level-1: 20px;
+        --spacing-level-2: 30px;
+        --spacing-level-3: 40px;
+        --spacing-level-4: 50px;
+        --max-width-content: 90vw;
+        --max-width-main-content: 80vw;
+        
+        --border-width: 1.5px;
+        --border-radius: 5px;
+        --border-color: #642226;
+
+        --focus-width: 3px;
+        --focus-color: #93b6ed;
     }
+
+    body {
+        font-family: var(--body-font-family);
+        font-size: var(--body-font-size);
+        color: var(--text-color);
+        max-width: 100vw;
+        margin: 0 auto;
+        line-height: 1;
+    }
+
+    nav {
+        background-color: var(--nav-and-footer-color);
+    }
+
+    footer {
+        background-color: var(--nav-and-footer-color);
+        color: var(--logo-navText-section2-color);
+        text-align: center;
+    }
+
+    h1 {
+        font-family: var(--heading-font-family);
+        font-size: var(--heading-font-size);
+        padding: var(--spacing-level-4) 0;
+        color: var(--heading1-table-decorative-color);
+    }
+    
+    h2, h3, h4, h5, h6 {
+        font-family: var(--heading-font-family);
+        font-size: var(--subheading-font-size);
+        padding: var(--spacing-level-2) 0;
+        color: var(--heading2-buttonFocus-color);   
+    }
+
+
 }
 
 @layer layout {
+    
 
 }
 
 @layer components {
+    nav a {
+        color: var(--logo-navText-section2-color);
+        text-decoration: none;
+    }
 
+    .section1 {
+        background-color: var(--section1-color);
+    }
+
+    .section2 {
+        background-color: var(--logo-navText-section2-color);
+    }
+
+    .button {
+        background-color: var(--nav-footer-button-color);
+        color: var(--logo-navText-section2-color);
+    }
+
+    svg {
+        fill: var(--logo-navText-section2-color);
+    }
 }
 
 @layer utilities {
@@ -84,6 +168,13 @@
 }
 
 @layer states {
+    a:hover {
+        background-color: var(--heading2-buttonFocus-color);
+    }
+    
+    nav a:focus-visible {
+        outline: var(--focus-width) solid var(--focus-color);
+    }
 
 }
 
