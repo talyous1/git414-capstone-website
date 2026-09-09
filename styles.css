@@ -102,9 +102,8 @@
         font-family: var(--body-font-family);
         font-size: var(--body-font-size);
         color: var(--text-color);
-        max-width: 100vw;
+        line-height: 1.5;
         margin: 0 auto;
-        line-height: 1;
     }
 
     nav {
@@ -123,20 +122,45 @@
         padding: var(--spacing-level-4) 0;
         color: var(--heading1-table-decorative-color);
     }
-    
-    h2, h3, h4, h5, h6 {
+
+    h2 {
         font-family: var(--heading-font-family);
         font-size: var(--subheading-font-size);
-        padding: var(--spacing-level-2) 0;
-        color: var(--heading2-buttonFocus-color);   
+        padding: var(--spacing-level-3) 0;
+        color: var(--heading2-buttonFocus-color);
+    }
+
+    h3, h4, h5, h6 {
+        font-family: var(--heading-font-family);
+        font-size: 1.25rem;
+        padding: var(--spacing-level-1) 0;
+        color: var(--heading2-buttonFocus-color);
     }
 
 
 }
 
 @layer layout {
-    
+    header, nav, footer {
+        max-width: var(--max-width-content);
+        margin: 0 auto;
+    }
 
+    main {
+        max-width: var(--max-width-main-content);
+        margin: 0 auto;
+        padding: var(--spacing-level-1) 0;
+    }
+
+    .nav-list {
+        display: flex;
+        gap: var(--spacing-level-1);
+        padding: var(--spacing-level-1);
+    }
+
+    .section {
+        padding: var(--spacing-level-2) 0;
+    }
 }
 
 @layer components {
