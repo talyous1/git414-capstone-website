@@ -178,8 +178,15 @@
     }
 
     .button {
-        background-color: var(--nav-footer-button-color);
-        color: var(--logo-navText-section2-color);
+        --button-bg: var(--nav-footer-button-color);
+        --button-text: var(--logo-navText-section2-color);
+
+        display: inline-block;
+        background-color: var(--button-bg);
+        color: var(--button-text);
+        padding: var(--spacing-level-1) var(--spacing-level-2);
+        border-radius: var(--border-radius);
+        text-decoration: none;
     }
 
     svg {
@@ -188,20 +195,75 @@
 }
 
 @layer utilities {
+    .text-center {
+        text-align: center;
+    }
 
+    .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip-path: inset(50%);
+        white-space: nowrap;
+    }
+
+    .flow > * + * {
+        margin-top: var(--spacing-level-1);
+    }
 }
 
 @layer states {
-    a:hover {
+    nav a:hover,
+    .button:hover {
         background-color: var(--heading2-buttonFocus-color);
     }
-    
-    nav a:focus-visible {
+
+    a:focus-visible,
+    .button:focus-visible {
         outline: var(--focus-width) solid var(--focus-color);
+        outline-offset: 2px;
     }
 
+    nav a[aria-current="page"] {
+        text-decoration: underline;
+        text-underline-offset: 4px;
+    }
+
+    .button:active {
+        transform: translateY(1px);
+    }
 }
 
-@media print {
+@layer overrides {
+    @media print {
+        body {
+            background: #fff;
+            color: #000;
+            font-size: 12pt;
+            line-height: 1.4;
+        }
 
+        nav, footer, svg, .button {
+            display: none;
+        }
+
+        main {
+            max-width: 100%;
+        }
+
+        h1, h2, h3 {
+            color: #000;
+            page-break-after: avoid;
+        }
+
+        table {
+            border: var(--border-width) solid #000;
+        }
+
+        a[href^="http"]::after {
+            content: " (" attr(href) ")";
+            font-size: 10pt;
+        }
+    }
 }
