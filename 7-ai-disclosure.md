@@ -1,0 +1,1 @@
+I asked AI to define what was meant by constraints and HTML/CSS scope for the Project Brief portion of this assignment. 
