@@ -1,0 +1,1 @@
+Navy, beige, and red are colors that are repeated throughout the website. I used tokens so that the colors of elements can be easily updated globally. I originally had the same styling for headers 2-6. I updated it to where headers have more distinct spacing amounts. 

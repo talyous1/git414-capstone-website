@@ -61,12 +61,6 @@
         Table borders will be red (#632226).
         Focus state will have a bright blue color (#93b6ed).
         The enroll now link will be styled as a navy blue button.
-
-        Utilities and states: at least three purposeful utilities plus hover, focus-visible, current page, and one additional relevant state.
-        Print support: a print stylesheet or print media block that improves readability for at least one important page type.
-        Refactoring evidence: before/after notes showing how you reduced duplication, lowered specificity, clarified naming, or replaced repeated values.
-        Architecture notes: a short explanation of your layer/order strategy, token decisions, naming approach, and browser checks.
-        AI disclosure: if used, document purpose, output considered, verification, and what changed.
         */
         
         --heading1-table-decorative-color: #642226;
