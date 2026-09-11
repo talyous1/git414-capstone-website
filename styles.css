@@ -140,7 +140,7 @@
         margin: 0 auto;
     }
 
-    main {
+    main, img {
         max-width: var(--max-width-main-content);
         margin: 0 auto;
         padding: var(--spacing-level-1) 0;
@@ -150,6 +150,10 @@
         display: flex;
         gap: var(--spacing-level-1);
         padding: var(--spacing-level-1);
+    }
+
+    .hero {
+        display: grid;
     }
 
     .section {
