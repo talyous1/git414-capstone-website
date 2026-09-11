@@ -67,7 +67,7 @@
         --heading2-buttonFocus-color: #627890;
         --logo-navText-section2-color: #D6B896;
         --nav-footer-button-color: #273751;
-        --section1-color: #FFFFFF;
+        --section1-headingBackground-color: #FFFFFF;
         --text-color: #000000;
         --nav-and-footer-color: #273751;
 
@@ -100,7 +100,8 @@
         margin: 0 auto;
     }
 
-    nav {
+    header {
+        padding: var(--spacing-level-1);
         background-color: var(--nav-and-footer-color);
     }
 
@@ -113,8 +114,10 @@
     h1 {
         font-family: var(--heading-font-family);
         font-size: var(--heading-font-size);
-        padding: var(--spacing-level-4) 0;
+        margin: var(--spacing-level-4) 0;
+        padding: var(--spacing-level-3);
         color: var(--heading1-table-decorative-color);
+        background-color: var(--section1-headingBackground-color);
     }
 
     h2 {
@@ -139,6 +142,11 @@
         max-width: var(--max-width-content);
         margin: 0 auto;
     }
+    
+    header {
+        display: flex;
+    }
+
 
     main {
         max-width: var(--max-width-main-content);
@@ -154,6 +162,7 @@
         display: flex;
         gap: var(--spacing-level-1);
         padding: var(--spacing-level-1);
+        justify-content: end;
     }
 
     .hero {
@@ -166,6 +175,11 @@
 }
 
 @layer components {
+
+    header img {
+        max-height: 70px;
+    }
+
     nav a {
         color: var(--logo-navText-section2-color);
         text-decoration: none;
@@ -202,6 +216,8 @@
     margin: 0;
     z-index: 10;
     }
+
+    
 
 }
 
