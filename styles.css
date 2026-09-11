@@ -140,10 +140,14 @@
         margin: 0 auto;
     }
 
-    main, img {
+    main {
         max-width: var(--max-width-main-content);
         margin: 0 auto;
         padding: var(--spacing-level-1) 0;
+    }
+
+    img {
+        max-width: var(--max-width-main-content)
     }
 
     .nav-list {
@@ -187,9 +191,18 @@
         text-decoration: none;
     }
 
-    svg {
-        fill: var(--logo-navText-section2-color);
+    .hero img,
+    .hero h1 {
+        grid-area: 1 / 1;
     }
+
+    .hero h1 {
+    align-self: center;
+    justify-self: center;
+    margin: 0;
+    z-index: 10;
+    }
+
 }
 
 @layer utilities {
