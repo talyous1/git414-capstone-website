@@ -186,9 +186,9 @@
         padding: var(--spacing-level-2) 0;
     }
 
-    .card-slot {
+    .events-panel {
         container-type: inline-size;
-        container-name: event-card;
+        container-name: events;
     }
 }
 
