@@ -184,18 +184,24 @@
         gap: var(--spacing-level-2);
         align-items: center;
         padding: var(--spacing-level-2) 0;
+    }
+
+    #obj-2 {
         container-type: inline-size;
     }
 
     .events-panel {
         display: grid;
-        gap: var(--spacing-level-1)
+        gap: var(--spacing-level-1);
     }
 
     @container (min-width: 45rem) {
         .events-panel {
             grid-template-columns: auto 1fr;
             align-items: center;
+        }
+        .events-panel h2 {
+            padding: 0;
         }
     }
 }
