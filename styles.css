@@ -185,6 +185,11 @@
         align-items: center;
         padding: var(--spacing-level-2) 0;
     }
+
+    .card-slot {
+        container-type: inline-size;
+        container-name: event-card;
+    }
 }
 
 @layer components {
