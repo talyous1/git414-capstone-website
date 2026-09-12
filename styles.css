@@ -275,6 +275,10 @@
     footer a {
         color: var(--logo-navText-section2-color);
     }
+
+    .events-panel table, .events-panel tr, .events-panel th, events-panel td {
+        display: block;
+    }
 }
 
 @layer utilities {
