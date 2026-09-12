@@ -184,11 +184,19 @@
         gap: var(--spacing-level-2);
         align-items: center;
         padding: var(--spacing-level-2) 0;
+        container-type: inline-size;
     }
 
     .events-panel {
-        container-type: inline-size;
-        container-name: events;
+        display: grid;
+        gap: var(--spacing-level-1)
+    }
+
+    @container (min-width: 45rem) {
+        .events-panel {
+            grid-template-columns: auto 1fr;
+            align-items: center;
+        }
     }
 }
 
@@ -276,9 +284,6 @@
         color: var(--logo-navText-section2-color);
     }
 
-    .events-panel table, .events-panel tr, .events-panel th, events-panel td {
-        display: block;
-    }
 }
 
 @layer utilities {
