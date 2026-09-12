@@ -1,0 +1,1 @@
+The events panel only takes up half of a two column grid, so it only takes up a narrow space on the page. A media query would resize the table based on how wide the page is, rather than how much space there is for the table. With a container query, the amount of space for the table is measured itself, which allows it to switch layouts on its own no matter the screen width.
