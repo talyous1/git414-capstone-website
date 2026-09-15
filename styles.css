@@ -53,15 +53,6 @@
 
 @layer base {
     :root {
-        /*
-        Logo and nav text will be in beige (#D6B896). Regular text will be in black (#000000). Navigation and footer background will be navy blue (#273751). Section backgrounds will be white (#FFFFFF) or beige (#D6B896). Decorative accents like underlines or tables will be red (#632226). 
-        CSS reset code will be used to reset default styles. Padding amounts will decrease as header levels decrease. Elements will have 20px top/bottom padding minimum.
-        Noto Serif will be the font for headers and Roboto for regular text.
-        Max-width of all content will be 90% of the viewport. The max-width for main page content will be 80% of the viewport.
-        Table borders will be red (#632226).
-        Focus state will have a bright blue color (#93b6ed).
-        The enroll now link will be styled as a navy blue button.
-        */
         
         --heading1-table-decorative-color: #642226;
         --heading2-buttonFocus-color: #627890;
@@ -77,12 +68,13 @@
         --subheading-font-size: 1.5rem;
         --body-font-size: 1rem;
 
-        --spacing-level-1: 20px;
-        --spacing-level-2: 30px;
-        --spacing-level-3: 40px;
-        --spacing-level-4: 50px;
-        --max-width-content: 90vw;
-        --max-width-main-content: 80vw;
+        --spacing-level-1: 1.25rem;
+        --spacing-level-2: clamp(1.25rem, 3vw, 1.875rem);
+        --spacing-level-3: clamp(1.5rem, 4vw, 2.5rem);
+        --spacing-level-4: clamp(2rem, 5vw, 3.125rem);
+        --wrapper-max: 75rem;
+        --wrapper-gutter: 2rem;
+        --measure: 65ch;
         
         --border-width: 1.5px;
         --border-radius: 5px;
