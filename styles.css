@@ -180,6 +180,7 @@
 
     #obj-2 {
         container-type: inline-size;
+        container-name: panel;
     }
 
     .events-panel {
@@ -187,13 +188,16 @@
         gap: var(--spacing-level-1);
     }
 
-    @container (min-width: 45rem) {
+    @container panel (min-inline-size: 28rem) {
+        .events-panel h2 {
+            padding-block: 0;
+        }
+    }
+
+    @container panel (min-inline-size: 45rem) {
         .events-panel {
             grid-template-columns: auto 1fr;
             align-items: center;
-        }
-        .events-panel h2 {
-            padding: 0;
         }
     }
 }
@@ -249,13 +253,13 @@
     }
 
     .feature-grid img {
-        width: 100%;
-        height: 100%;
+        inline-size: 100%;
+        block-size: 100%;
         object-fit: cover;
     }
 
     .feature-grid h2 {
-        padding-top: 0;
+        padding-block-start: 0;
     }
 
     table {
