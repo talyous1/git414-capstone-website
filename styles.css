@@ -143,15 +143,16 @@
     }
 
     img {
-        max-width: 100%;
-        height: auto;
+    max-inline-size: 100%;
+    block-size: auto;
     }
 
     .nav-list {
         display: flex;
         gap: var(--spacing-level-4);
-        padding: var(--spacing-level-1);
+        padding-block: var(--spacing-level-1);
         justify-content: end;
+        flex-wrap: wrap;
     }
 
     .hero {
@@ -159,7 +160,7 @@
     }
 
     .section {
-        padding: var(--spacing-level-2) 0;
+        padding-block: var(--spacing-level-2);
     }
 
     .feature-grid {
