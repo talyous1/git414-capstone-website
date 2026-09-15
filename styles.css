@@ -205,7 +205,7 @@
 @layer components {
 
     header img {
-        max-height: 70px;
+        max-block-size: 70px;
     }
 
     nav a {
