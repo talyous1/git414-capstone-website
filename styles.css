@@ -386,4 +386,24 @@
             }
         }
     }
+
+    @media (prefers-reduced-motion: reduce) {
+        *, *::before, *::after {
+            animation-duration: 0.01ms !important;
+            animation-iteration-count: 1 !important;
+            transition-duration: 0.01ms !important;
+        }
+
+        .button:active {
+            transform: none;
+        }
+    }
+
+    @media (prefers-contrast: more) {
+        :root {
+            --border-width: 2.5px;
+            --heading2-buttonFocus-color: #3d4f63;
+            --focus-width: 4px;
+        }
+    }
 }
