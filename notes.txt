@@ -1,0 +1,15 @@
+For this deliverable I extended my CSS. The layer cascade, color tokens, font choices, and CSS reset were the only items not changed. I made various changes to the layout of my website.
+
+Upon review, my current results are different than what I had originally outlined in my planning package. For example, I originally wanted to make everything to be 90% of the viewport, and 80% for main content. It came to my attention that using viewport units for sizing the entire webpage is flawed due to how it works with scrollbars. I replaced this sizing with using a wrapper that has a gutter on small screens and a 75rem cap for bigger ones.
+
+My plan also originally mentioned 70px of padding for sections, however that is way too much for a phone screen size. I used clamp() instead, which allows spacing to smoothly scale across different viewport sizes. This reduced the amount of media queries I needed as well.
+
+I originally said that the nav, footer, images, and paragraphs would use flexbox. The nav still does, however page layouts use grid instead.
+
+The school offerings section was a really long block of text that discussed all program levels of the school. I broke this paragraph into article cards for each grade section. This fixed the line length issue and allowed me to use auto-fit and a subgrid. 
+
+I used fit-content(12rem) on the header so that the logo never pushes the nav off the row. I also used auto-fit with a minmax(min(18rem, 100%), 1fr) on the program cards and feature grid so that they can reflow on their own. I also used fit-content on the date column for the table so that it stops splitting 50/50.
+
+The program cards take up two parent rows, allowing all four headings to stay aligned to one baseline, even when a longer one wraps. This allows them to be normal blocks while keeping everything readable.
+
+The events panel changes to its container instead of the viewport as it is in one grid cell and is about half the wrapper width across different screen sizes. The fallback is a 60rem viewport query.
