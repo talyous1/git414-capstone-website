@@ -10,6 +10,10 @@ The school offerings section was a really long block of text that discussed all 
 
 I used fit-content(12rem) on the header so that the logo never pushes the nav off the row. I also used auto-fit with a minmax(min(18rem, 100%), 1fr) on the program cards and feature grid so that they can reflow on their own. I also used fit-content on the date column for the table so that it stops splitting 50/50.
 
-The program cards take up two parent rows, allowing all four headings to stay aligned to one baseline, even when a longer one wraps. This allows them to be normal blocks while keeping everything readable.
+The program cards take up two parent rows, allowing all four headings to stay aligned to one baseline, even when a longer one wraps. Without subgrid support they will show as normal blocks without alignment.
 
-The events panel changes to its container instead of the viewport as it is in one grid cell and is about half the wrapper width across different screen sizes. The fallback is a 60rem viewport query.
+The events panel adapts to its container instead of the viewport as it is in one grid cell and is about half the wrapper width across different screen sizes. The fallback is a 60rem viewport query.
+
+One big change was that I originally wanted a burger menu for the nav, however I dropped this and replaced it with keeping the navs as links and resizing them to fit on phones.
+
+I added reduced motion and increased contrast through overriding custom root properties.
