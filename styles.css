@@ -172,10 +172,10 @@
 
     .feature-grid {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(min(22rem, 100%), 1fr));
         gap: var(--spacing-level-2);
         align-items: center;
-        padding: var(--spacing-level-2) 0;
+        padding-block: var(--spacing-level-2);
     }
 
     #obj-2 {
@@ -372,8 +372,9 @@
             content: " (" attr(href) ")";
             font-size: 10pt;
         }
+    }
 
-        @media (max-width: 48rem) {
+    @media (max-width: 48rem) {
             header .wrapper {
                 grid-template-columns: 1fr;
                 justify-items: start;
@@ -385,7 +386,6 @@
                 padding-inline: 0;
             }
         }
-    }
 
     @media (prefers-reduced-motion: reduce) {
         *, *::before, *::after {
@@ -404,6 +404,15 @@
             --border-width: 2.5px;
             --heading2-buttonFocus-color: #3d4f63;
             --focus-width: 4px;
+        }
+    }
+
+    @supports not (container-type: inline-size) {
+        @media (min-width: 60rem) {
+            .events-panel {
+                grid-template-columns: auto 1fr;
+                align-items: center;
+            }
         }
     }
 }
