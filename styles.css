@@ -264,29 +264,41 @@
     }
 
     table {
-        width: 100%;
+        inline-size: 100%;
         border: var(--border-width) solid var(--border-color);
     }
 
     th, td {
         border: var(--border-width) solid var(--border-color);
         padding: var(--spacing-level-1);
-        text-align: left;
+        text-align: start;
     }
 
-    th {
-        font-family: var(--heading-font-family);
-        background-color: var(--logo-navText-section2-color);
+    td:last-child {
+        inline-size: fit-content;
+        white-space: nowrap;
     }
 
     footer {
-        padding: var(--spacing-level-2) 0;
+        padding-block: var(--spacing-level-2);
     }
 
     footer a {
         color: var(--logo-navText-section2-color);
     }
 
+    @supports (grid-template-rows: subgrid) {
+        .programs article {
+            display: grid;
+            grid-row: span 2;
+            grid-template-rows: subgrid;
+            row-gap: var(--spacing-level-1);
+        }
+
+        .programs article h3 {
+            padding-block: 0;
+        }
+    }
 }
 
 @layer utilities {
