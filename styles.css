@@ -278,6 +278,19 @@
         background-color: var(--logo-navText-section2-color);
     }
 
+.button {
+  --button-bg: var(--nav-footer-button-color);
+  --button-text: var(--logo-navText-section2-color);
+
+  display: inline-block;
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  padding-block: var(--spacing-level-1);
+  padding-inline: var(--spacing-level-2);
+  border-radius: var(--border-radius);
+  text-decoration: none;
+}
+
     footer {
         padding: var(--spacing-level-2) 0;
     }
