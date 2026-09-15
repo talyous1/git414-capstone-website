@@ -372,5 +372,18 @@
             content: " (" attr(href) ")";
             font-size: 10pt;
         }
+
+        @media (max-width: 48rem) {
+            header .wrapper {
+                grid-template-columns: 1fr;
+                justify-items: start;
+            }
+
+            .nav-list {
+                justify-content: start;
+                gap: var(--spacing-level-2);
+                padding-inline: 0;
+            }
+        }
     }
 }
