@@ -163,6 +163,13 @@
         padding-block: var(--spacing-level-2);
     }
 
+    .programs {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(min(18rem, 100%), 1fr));
+        gap: var(--spacing-level-2);
+        padding-block: var(--spacing-level-3);
+    }
+
     .feature-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
