@@ -89,24 +89,17 @@
         font-size: var(--body-font-size);
         color: var(--text-color);
         line-height: 1.5;
-        margin: 0 auto;
     }
 
     header {
-        padding: var(--spacing-level-1);
+        padding-block: var(--spacing-level-1);
         background-color: var(--nav-and-footer-color);
-    }
-
-    footer {
-        background-color: var(--nav-and-footer-color);
-        color: var(--logo-navText-section2-color);
-        text-align: center;
     }
 
     h1 {
         font-family: var(--heading-font-family);
         font-size: var(--heading-font-size);
-        margin: var(--spacing-level-4) 0;
+        margin-block: var(--spacing-level-4);
         padding: var(--spacing-level-3);
         color: var(--heading1-table-decorative-color);
         background-color: var(--section1-headingBackground-color);
@@ -115,17 +108,16 @@
     h2 {
         font-family: var(--heading-font-family);
         font-size: var(--subheading-font-size);
-        padding: var(--spacing-level-3) 0;
+        padding-block: var(--spacing-level-3);
         color: var(--heading2-buttonFocus-color);
     }
 
     h3, h4, h5, h6 {
         font-family: var(--heading-font-family);
         font-size: 1.25rem;
-        padding: var(--spacing-level-1) 0;
+        padding-block: var(--spacing-level-1);
         color: var(--heading2-buttonFocus-color);
     }
-
 
 }
 
