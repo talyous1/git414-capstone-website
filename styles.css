@@ -287,6 +287,9 @@
 
     footer {
         padding-block: var(--spacing-level-2);
+        color: var(--logo-navText-section2-color);
+        background-color: var(--nav-and-footer-color);
+        text-align: center;
     }
 
     footer a {
