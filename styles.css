@@ -130,21 +130,21 @@
     }
 
     .wrapper {
-    inline-size: min(100% - var(--wrapper-gutter), var(--wrapper-max));
-    margin-inline: auto;
+        inline-size: min(100% - var(--wrapper-gutter), var(--wrapper-max));
+        margin-inline: auto;
     }
 
     main {
-    padding-block: var(--spacing-level-1);
+        padding-block: var(--spacing-level-1);
     }
 
     main > p {
-    max-inline-size: var(--measure);
+        max-inline-size: var(--measure);
     }
 
     img {
-    max-inline-size: 100%;
-    block-size: auto;
+        max-inline-size: 100%;
+        block-size: auto;
     }
 
     .nav-list {
@@ -272,6 +272,12 @@
         border: var(--border-width) solid var(--border-color);
         padding: var(--spacing-level-1);
         text-align: start;
+    }
+
+    th {
+        font-weight: bold;
+        background-color: var(--heading1-table-decorative-color);
+        color: var(--logo-navText-section2-color);
     }
 
     td:last-child {
