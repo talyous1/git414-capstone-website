@@ -205,7 +205,6 @@
         aspect-ratio: 16 / 9;
         inline-size: 100%;
         max-inline-size: 40rem;
-        background: var(--color-muted);
         padding: 20px 0;
     }
 
