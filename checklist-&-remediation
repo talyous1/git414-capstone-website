@@ -3,6 +3,11 @@ Checklist Answers:
 2. Yes, the video has captions and a transcript provided by Youtube.
 3. Yes, the video uses Youtube's built in controls which are visible, keyboard reachable, and easy to understand.
 4. Yes, the video does not play automatically and only moves once the user hits play.
-5. 
-6.
-7.
+5. Yes, the iframe has the title "Advanced American Academy Tour", which is relevant.
+6. Yes, there is a "Watch our school tour on Youtube" link under the video.
+7. It is low risk. I used a no cookie youtube link for privacy, loading="lazy" for performance, and aspect-ratio 16/9 for space on the page. 
+
+Remediation Plan:
+1. Check if the video captions are accurate
+2. Remove the unnecessary ?si= portion from the fallback link
+3. Add a short summary or transcript of the video
