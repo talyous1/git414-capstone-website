@@ -205,7 +205,7 @@
         aspect-ratio: 16 / 9;
         inline-size: 100%;
         max-inline-size: 40rem;
-        padding: 20px 0;
+        padding: var(--spacing-level-1) 0;
     }
 
     .media-frame iframe {
