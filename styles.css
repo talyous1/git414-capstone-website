@@ -200,6 +200,21 @@
             align-items: center;
         }
     }
+
+    .media-frame {
+        aspect-ratio: 16 / 9;
+        inline-size: 100%;
+        max-inline-size: 40rem;
+        background: var(--color-muted);
+        padding: 20px 0;
+    }
+
+    .media-frame iframe {
+        inline-size: 100%;
+        block-size: 100%;
+        border: 0;
+    }
+
 }
 
 @layer components {
