@@ -60,4 +60,6 @@ I changed my alt text to more accurately describe the images. As I turned the lo
 | C7 (classroom) | Informative, shows a class in session | "Students working at desks in an Advanced American Academy classroom, viewed from behind a student" |
 
 
-##
+## Layout stability 
+CLS came back as 0 during the lighthouse test. Nothing moved during load. This is because space for the elements is reserved before the actual elements load in. For example, the width and height attributes for the logo and hero image save space for these elements, and the aspect-ratio: 3/2 and object-fit: cover saves space for the classroom image. The display=swap allows fonts to have similar fallbacks.
+

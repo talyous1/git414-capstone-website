@@ -1,3 +1,5 @@
+Google AI gave me Georgia as an example font fallback for Noto Serif and Arial for Roboto.
+
 Google AI was used to give an example of a preference query. I took inspiration from its results:
 
 🎨 Visual & Theme Preferencesprefers-color-scheme: Detects if the user prefers a light or dark interface.css@media (prefers-color-scheme: dark) {
