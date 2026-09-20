@@ -52,8 +52,14 @@
 }
 
 @layer base {
+    /* Typography Documentation
+        Primary Fonts: Noto Serif and Roboto. Both are Google Fonts under the SIL Open Font License
+        Loading: display=swap + preconnect. Fallbacks are Georgia and Arial
+        Scale: 2 / 1.5 / 1.25 / 1rem
+        Readability: --measure 65ch line length, line height 1.5
+        Spacing: 4 levels, last 3 use clamp()
+    */
     :root {
-        
         --heading1-table-decorative-color: #642226;
         --heading2-buttonFocus-color: #627890;
         --logo-navText-section2-color: #D6B896;
@@ -62,8 +68,8 @@
         --text-color: #000000;
         --nav-and-footer-color: #273751;
 
-        --heading-font-family: 'Noto Serif', serif;
-        --body-font-family: Roboto, sans-serif;
+        --heading-font-family: 'Noto Serif', Georgia, serif;
+        --body-font-family: Roboto, Arial, sans-serif;
         --heading-font-size: 2rem;
         --subheading-font-size: 1.5rem;
         --body-font-size: 1rem;
@@ -199,19 +205,6 @@
             grid-template-columns: auto 1fr;
             align-items: center;
         }
-    }
-
-    .media-frame {
-        aspect-ratio: 16 / 9;
-        inline-size: 100%;
-        max-inline-size: 40rem;
-        padding: var(--spacing-level-1) 0;
-    }
-
-    .media-frame iframe {
-        inline-size: 100%;
-        block-size: 100%;
-        border: 0;
     }
 
 }
