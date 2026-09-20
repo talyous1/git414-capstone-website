@@ -49,3 +49,15 @@ I tested the webpage in Lighthouse using a slow network and these were the resul
 | Total Blocking Time | 40 ms | Good |
 
 Images and fonts did take a second to load in, but nothing moved or readjusted on the page. Text appeared right away as the fallbacks, Georgia and Arial. There is no invisible text thankfully due to display=swap and the fallbacks fonts that are not significantly different in size.
+
+## Alt Text
+I changed my alt text to more accurately describe the images. As I turned the logo into a link, I changed the alt to describe the purpose of the logo as a link rather than describe what the logo looks like.
+
+| Image | Purpose | Alt text used |
+| --- | --- | --- |
+| C1.svg (logo) | Functional, it's wrapped in a link to the home page | "Advanced American Academy - Home" |
+| C2 (campus) | Informative, shows the building | "Advanced American Academy campus, a glass and red brick building with a stairway and red path leading to the entrance" |
+| C7 (classroom) | Informative, shows a class in session | "Students working at desks in an Advanced American Academy classroom, viewed from behind a student" |
+
+
+##
