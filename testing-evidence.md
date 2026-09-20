@@ -17,3 +17,35 @@ The website scored 89 for performance, 100 for accessibility, 100 for best pract
 | C7-1200w.jpg | 1200 × 795 | JPEG q80 | 145.1 KB | Unsplash, Taylor Flowe, Unsplash License |
 | Noto Serif | — | WOFF2 via Google Fonts | external | SIL Open Font License |
 | Roboto | — | WOFF2 via Google Fonts | external | SIL Open Font License |
+
+A browser load is 53 to 371 KB. The biggest difference to loading was the resizing of images. The original school and class images were 2760 x 5910 and 3022 x 4563 which took longer to load.
+There are no audio, video, or embeds. I removed the YouTube video as it was for a previous assignment and not a part of my original capstone plan.
+
+## Responsive widths
+The website passed all resize tests
+
+| Width | Layout behavior | Result |
+| --- | --- | --- |
+| 320 px | Single column; nav wraps to left-aligned list; hero h1 stays centered over image | Pass |
+| 480 px | Same single-column layout; program cards full width | Pass |
+| 768 px | Below the 48rem breakpoint, so header stacks logo above nav | Pass |
+| 1024 px | Program grid splits to multiple columns; feature grid goes two-up | Pass |
+| 1440 px | Wrapper caps at 75rem and centers; no over-stretch | Pass |
+
+Both photos use srcset and sizes, allowing the browser to pick the best sized image per the space available on the page. 
+The hero image is sized with sizes="(min-width: 77rem) 75rem, 100vw", because it fills the wrapper, which caps at 75rem.
+The classroom image is sized with sizes="(min-width: 56rem) 50vw, 100vw", because it is half width when the feature grid splits.
+
+## 200% Zoom
+I zoomed to 200% at 1280px and went through all the pages. There is no horizontal scrolling anywhere. All elements readjust to fit within the screen (text reflows, nav wraps, images shrink). All my sizes are in rem which is what makes this work.
+
+## Slow network
+I tested the webpage in Lighthouse using a slow network and these were the results
+
+| Metric | Result | Rating |
+| --- | --- | --- |
+| First Contentful Paint | 0.7 s | Good |
+| Largest Contentful Paint | 0.9 s | Good |
+| Total Blocking Time | 40 ms | Good |
+
+Images and fonts did take a second to load in, but nothing moved or readjusted on the page. Text appeared right away as the fallbacks, Georgia and Arial. There is no invisible text thankfully due to display=swap and the fallbacks fonts that are not significantly different in size.
