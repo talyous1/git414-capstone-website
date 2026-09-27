@@ -315,6 +315,30 @@
             padding-block: 0;
         }
     }
+
+    form label {
+        font-weight: 500;
+        color: var(--nav-footer-button-color);
+    }
+
+    form input {
+        margin: .75rem 0;
+        color:var(--text-color);
+        background-color: var(--section1-headingBackground-color);
+        border: var(--border-width) solid var(--nav-footer-button-color);
+        border-radius: var(--border-radius);
+        padding: .4em;
+    }
+
+    form input[type="submit"] {
+        background-color: var(--nav-footer-button-color);
+        color: var(--section1-headingBackground-color);
+    }
+
+    form input[type="submit"]:hover {
+        background-color: var(--section1-headingBackground-color);
+        color: var(--nav-footer-button-color);
+    }
 }
 
 @layer utilities {
