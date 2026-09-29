@@ -378,13 +378,15 @@
 @layer states {
     nav a:hover,
     .button:hover {
-        background-color: var(--heading2-buttonFocus-color);
+        background-color: var(--logo-navText-section2-color);
+        color: var(--nav-footer-button-color);
     }
 
     a:focus-visible,
     .button:focus-visible {
         outline: var(--focus-width) solid var(--focus-color);
         outline-offset: 2px;
+        box-shadow: 0 0 0 7px #273751;
     }
 
     nav a[aria-current="page"] {
