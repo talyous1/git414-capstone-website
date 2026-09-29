@@ -88,6 +88,7 @@
 
         --focus-width: 3px;
         --focus-color: #93b6ed;
+        --focus-ring-contrast: #273751;
     }
 
     body {
@@ -339,6 +340,20 @@
         background-color: var(--section1-headingBackground-color);
         color: var(--nav-footer-button-color);
     }
+
+    .skip-link { 
+        position: absolute; 
+        top: -10rem; 
+        left: 1rem; 
+        background: #D6B896; 
+        color: #273751; 
+        padding: .75rem; 
+    }
+    
+    .skip-link:focus { 
+        top: 1rem; 
+    }
+
 }
 
 @layer utilities {
