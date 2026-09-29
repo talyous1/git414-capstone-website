@@ -208,6 +208,15 @@
         }
     }
 
+    main ol { 
+        list-style: decimal; 
+        padding-left: 1.5rem; 
+    }
+    
+    .table-wrap { 
+        overflow-x: auto; 
+    }
+
 }
 
 @layer components {
@@ -317,6 +326,12 @@
         }
     }
 
+    form { 
+        display: grid; 
+        gap: .5rem; 
+        max-width: 36rem; 
+    }
+
     form label {
         font-weight: 500;
         color: var(--nav-footer-button-color);
@@ -382,8 +397,7 @@
         color: var(--nav-footer-button-color);
     }
 
-    a:focus-visible,
-    .button:focus-visible {
+    a:focus-visible, .button:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, .table-wrap:focus-visible {
         outline: var(--focus-width) solid var(--focus-color);
         outline-offset: 2px;
         box-shadow: 0 0 0 7px #273751;
