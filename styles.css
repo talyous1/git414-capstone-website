@@ -238,7 +238,7 @@
         background-color: var(--logo-navText-section2-color);
     }
 
-    .button {
+    nav a, .button {
         --button-bg: var(--nav-footer-button-color);
         --button-text: var(--logo-navText-section2-color);
 
@@ -249,6 +249,10 @@
         padding-inline: var(--spacing-level-2);
         border-radius: var(--border-radius);
         text-decoration: none;
+    }
+
+    #enroll {
+        margin: var(--spacing-level-1) 0;
     }
 
     .hero img,
