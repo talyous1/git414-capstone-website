@@ -1,5 +1,7 @@
 Google AI gave me Georgia as an example font fallback for Noto Serif and Arial for Roboto.
 
+--------------------------------------------------------------------------------------------------
+
 Google AI was used to give an example of a preference query. I took inspiration from its results:
 
 🎨 Visual & Theme Preferences prefers-color-scheme: Detects if the user prefers a light or dark interface.css@media (prefers-color-scheme: dark) {
@@ -20,3 +22,54 @@ Use code with caution.forced-colors: Detects if the operating system restricts t
   }
 }
 Use code with caution.prefers-reduced-data: Detects if the user wants to conserve data usage, allowing you to avoid loading heavy background images or videos (no-preference, reduce). [1] (https://css-tricks.com/a-complete-guide-to-css-media-queries/), [2] (https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Media_queries/Using_for_accessibility), [3] (https://daily.dev/posts/the-four-user-preference-media-queries-your-css-should-honor-d3p1sn2t2)
+
+--------------------------------------------------------------------------------------------------
+
+Google AI was used to recap how to write structured data as JSON-LD
+
+To structure data using JSON-LD (JavaScript Object Notation for Linked Data), you must embed a standard JSON object inside an isolated <script type="application/ld+json"> tag. Google officially recommends this format for defining web page semantics.
+Below is a template showing a unified @graph structure—the highly optimized format preferred by modern search engines and AI crawlers to understand entity relationships on a single page.
+html
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://example.com",
+      "url": "https://example.com",
+      "name": "Example Brand",
+      "description": "An example website showcasing structured data.",
+      "publisher": {
+        "@id": "https://example.com#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://example.com#organization",
+      "name": "Example Corp",
+      "url": "https://example.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://example.comlogo.png"
+      },
+      "sameAs": [
+        "https://facebook.com",
+        "https://twitter.com"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://example.compage/#webpage",
+      "url": "https://example.compage/",
+      "name": "Example Page Title",
+      "isPartOf": {
+        "@id": "https://example.com"
+      },
+      "about": {
+        "@id": "https://example.com#organization"
+      }
+    }
+  ]
+}
+</script>
