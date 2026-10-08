@@ -166,10 +166,6 @@
         display: grid;
     }
 
-    .section {
-        padding-block: var(--spacing-level-2);
-    }
-
     .programs {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(min(18rem, 100%), 1fr));
@@ -228,14 +224,6 @@
     nav a {
         color: var(--logo-navText-section2-color);
         text-decoration: none;
-    }
-
-    .section1 {
-        background-color: var(--section1-headingBackground-color);
-    }
-
-    .section2 {
-        background-color: var(--logo-navText-section2-color);
     }
 
     nav a, .button {
@@ -351,16 +339,6 @@
         font: inherit;
     }
 
-    form input[type="submit"] {
-        background-color: var(--nav-footer-button-color);
-        color: var(--section1-headingBackground-color);
-    }
-
-    form input[type="submit"]:hover {
-        background-color: var(--section1-headingBackground-color);
-        color: var(--nav-footer-button-color);
-    }
-
     button.button {
         border: 0;
         font: inherit;
@@ -384,10 +362,6 @@
 }
 
 @layer utilities {
-    .text-center {
-        text-align: center;
-    }
-
     .visually-hidden {
         position: absolute;
         width: 1px;
@@ -395,10 +369,6 @@
         overflow: hidden;
         clip-path: inset(50%);
         white-space: nowrap;
-    }
-
-    .flow > * + * {
-        margin-top: var(--spacing-level-1);
     }
 }
 
