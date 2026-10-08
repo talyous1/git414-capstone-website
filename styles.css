@@ -341,7 +341,7 @@
         color: var(--nav-footer-button-color);
     }
 
-    form input {
+    form input, form textarea {
         margin: .75rem 0;
         color:var(--text-color);
         background-color: var(--section1-headingBackground-color);
@@ -358,6 +358,13 @@
     form input[type="submit"]:hover {
         background-color: var(--section1-headingBackground-color);
         color: var(--nav-footer-button-color);
+    }
+
+    button.button {
+        border: 0;
+        font: inherit;
+        cursor: pointer;
+        justify-self: start;
     }
 
     .skip-link { 
