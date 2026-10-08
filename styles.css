@@ -348,6 +348,7 @@
         border: var(--border-width) solid var(--nav-footer-button-color);
         border-radius: var(--border-radius);
         padding: .4em;
+        font: inherit;
     }
 
     form input[type="submit"] {
