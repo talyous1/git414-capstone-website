@@ -1,7 +1,0 @@
-Explanation & Reflection
-
-What it supports: The Open Graph tags control what shows up when someone shares the home page link, such as the title, description, and campus photo. The School JSON-LD tells search engines that this page is about a school in Houston.
-
-What it doesn't guarantee: None of this makes the site rank higher or cause the site to show up in Google as a special result. Search engines or social apps can just ignore or rewrite my title, description or image. It just gives them accurate information to work with.
-
-A claim I wouldn't make: The About Us section says that the school is "one of Houston's largest," but I left that out of the description and structured data on purpose as it would need to be occasionally fact-checked, or else the metadata would be misleading. I also wouldn't say that adding JSON-LD boosts SEO as it doesn't directly affect ranking.
