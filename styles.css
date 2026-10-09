@@ -442,6 +442,11 @@
                 gap: var(--spacing-level-2);
                 padding-inline: 0;
             }
+
+            .hero h1 {
+                font-size: 1.5rem;
+                padding: var(--spacing-level-1);
+            }
         }
 
     @media (prefers-reduced-motion: reduce) {
