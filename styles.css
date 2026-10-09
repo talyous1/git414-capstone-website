@@ -351,7 +351,7 @@
         top: -10rem; 
         left: 1rem; 
         background: #D6B896; 
-        color: #273751; 
+        color: var(--nav-footer-button-color); 
         padding: .75rem; 
     }
     
@@ -382,7 +382,7 @@
     a:focus-visible, .button:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, .table-wrap:focus-visible {
         outline: var(--focus-width) solid var(--focus-color);
         outline-offset: 2px;
-        box-shadow: 0 0 0 7px #273751;
+        box-shadow: 0 0 0 7px var(--focus-ring-contrast);
     }
 
     nav a[aria-current="page"] {
