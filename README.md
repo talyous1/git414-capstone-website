@@ -1,7 +1,7 @@
 # Advanced American Academy
 My GIT 414 capstone: a 4-page website for a fictional K-12 school in Houston, Texas, made with HTML and CSS.
 
-[Live Site](https://talyous1.github.io/git414-capstone-website/)
+Live Site: https://talyous1.github.io/git414-capstone-website/
 
 ## Pages:
 - index.html: about the school, programs, and events
